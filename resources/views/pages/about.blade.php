@@ -1,0 +1,4 @@
+@extends('layouts.app')
+@section('content')
+<div class="section-head"><div><div class="eyebrow">The build</div><h1>{{ $title }}</h1><p>{{ $subtitle }}</p></div></div><div class="info-grid"><article class="info-card"><h3>What this activity demonstrates</h3><p>This application rebuilds the POS pages from TFA1 in Laravel. A route selects the controller method, the controller prepares the response, and a Blade view renders the interface.</p><p>Both account pages use a static PHP array as their temporary data source and loop through each record with <strong>@foreach</strong>.</p></article><article class="info-card"><h3>Project map</h3><ul><li><strong>routes/web.php</strong> maps the four pages.</li><li><strong>PageController</strong> handles home and about.</li><li><strong>CustomerController</strong> and <strong>UserController</strong> handle account lists.</li><li><strong>resources/views</strong> contains Blade templates.</li></ul></article></div>
+@endsection
